@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Project HOB</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!---Add Title --->
+
+    <form>
+    <div id="title">
+    <img src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
+    <p>Add a title to you assignment:</p>
+    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();">Add title</button>
+    <button onclick="next1();">Next</button>
+    </div>
+    
+
+    <!---Add Step --->
+    <div id="addSteps" style="display:none">
+      <img src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEeIpOoYRpv87p/pub?w=963&amp;h=194">
+     <p>Now add some steps you'll have to do for your project or long assignment</p>
+     <input id="input" type="text"><button onclick="addElement()">Add Step</button>
+     <button onclick="next2();">Next</button>
+    </div>
+
+    <!-- Add tasks to steps --->
+    <div id="addTasksToSteps" style="display:none">
+    <img src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
+    <p>Add tasks to your steps</p>
+    <div id="inputTaskDiv" style="display:none">
+     <input id="taskInput" type="text"><button onclick="addTask()">Add Task</button>
+    </div>
+    <button onclick="next3();">Next</button>
+    </div>
+
+    <!-- Final Schedule --->
+    <div id="scheduleDiv" style="display:none">
+    </div> 
+
+    <div id="divColl">
+      <h1 id="assignmentTitle"></h1>
+    </div>   
+
+    <div class="container"></div>
+
+    <div id="msg">
+      <pre></pre>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+       let movies = [];
+        // example {id:1592304983049, title: 'Deadpool', year: 2015}
+        const addMovie = (ev)=>{
+            ev.preventDefault();  //to stop the form submitting
+            let movie = {
+                id: Date.now(),
+                title: document.getElementById('title').value,
+                year: document.getElementById('yr').value
+            }
+            movies.push(movie);
+            document.forms[0].reset(); // to clear the form for the next entries
+            //document.querySelector('form').reset();
+
+            //for display purposes only
+            console.warn('added' , {movies} );
+            let pre = document.querySelector('#msg pre');
+            pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+            //saving to localStorage
+            localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+        }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btn').addEventListener('click', addMovie);
+        });
+      </script> 
+  </body>
+</html>
