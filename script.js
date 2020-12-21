@@ -53,7 +53,7 @@ function addElement() {
     text = document.getElementById("input").value;
     // create a new div element and give it a unique id
 
-    var newDiv = $("<button class='collapsible' onclick='selectedColl()'></button>").text(text);
+    var newDiv = $("<button class='collapsible' onclick='selectedColl()'>"+text+"</button>");
     $(newDiv).append("<button class='btnDelete'>Delete</button>");
     var newContentOfDiv = $("<div class='content'></div>");
 
@@ -70,6 +70,7 @@ function addElement() {
 
     document.getElementById("input").value = " ";
     $("#divColl").append(newDiv, newContentOfDiv);
+
 
     newDiv.click(function () {
         this.classList.toggle("active");
