@@ -1,3 +1,5 @@
+
+
  /* Simple utility to generate semi-random string IDs */
             const uniqid=function(l=6){
                 let t=[];
@@ -126,7 +128,7 @@
                     */
                     let bttn=create('button',{'class':'collapsible','data-id':id},parent);
                     create('span',{'class':'text','text':text},bttn);
-                    create('button',{'class':'btnDelete','text':'Delete'},bttn);
+                    
                     return create('div',{'class':'content','data-id':id},parent);
                 };
                 
@@ -429,8 +431,6 @@ function showEditProjectConsole(){
   document.getElementById("img3").style.display = "none";
   document.getElementById("taskToSteps").style.display = "none";
   document.getElementById("title").style.display = "block";
-  document.getElementById("hideWalkthroughBtn").style.display = "none";
-  document.getElementById("walkthroughBtn").style.display = "block";
 }
 
 function walkThroughShow(){
