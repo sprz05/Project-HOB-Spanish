@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    </head>
+
+    <!-- target for generated content -->
+        <article id="fullProject">
+        <center><h1 id="assignmentTitle"></h1></center>
+        <div id='divColl'></div>
+        </article>
+    <body>
+    <div id="title">
+         <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
+    <p>Add a title for you long assignment or project:</p>
+    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();">Add title</button>
+    <div style="height:100px"></div>
+    <button onclick="next1();">Next</button>
+    </div>
+        <!--- Add Step --->
+        <div id='addSteps' style="display:none">
+            <img id="img2" src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEeIpOoYRpv87p/pub?w=963&amp;h=194">
+           <p>Now add some steps you'll have to take for your project or long assignment</p>
+            <input id='input' type='text' placeholder='Step 1: Gather supplies' />
+            <button class='addcollapsible'>Add step</button>
+            <div style="height:100px"></div>
+            <button class="btn btn-lg btn-primary" onclick="back1();">Back</button>
+            <button class="btn btn-lg btn-primary" id="taskToSteps" onclick="next2();">Next</button>
+        </div>
+
+        <!-- Add content to Collapsible (display:none) --->
+        <div id='addTasksToSteps' style='display:none'>
+            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
+         <p>Add tasks to your steps</p>
+            <!-- this will be cloned -->
+            <div id='inputTaskDiv' style='display:none'>
+                <input id='taskInput' type='text' />
+                <button class='addtask'>Add task</button>
+            </div>
+                <div style="height:100px"></div>
+                <button class="btn btn-lg btn-primary" onclick="back2();">Back</button>
+                <a class="btn btn-lg btn-primary" href="index2.html"><button>Next</button></a>
+         </div>
+
+        <!-- this will be cloned -->
+        <a href='#' id='deltask'>X</a>
+        
+    </body>
+
+<div class="row" style=" display:none;">
+  <div id="hideWalkthroughBtn" class="column" style=" display:none; background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><p onclick="hideWalkThrough()">Hide Walkthrough 🗺️</p></center>
+ </div>
+
+ <div id="walkthroughBtn" class="column" style=" background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><p onclick="walkThroughShow()">Show Walkthrough 🗺️</p></center>
+ </div>
+  
+  <div class="column" style="background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><p onclick="showEditProjectConsole()">Edit Project ✏️</p></center>
+ </div>
+
+ <div class="column" style="display:none; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><p onclick="showEditProjectConsole()">Don't Edit Project ✏️</p></center>
+ </div>
+ 
+  <div class="column" style="background-color:green; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><a href="index2.html" target="_blank">See full project ➕</a></center>
+ </div>
+
+    <script src="script.js"></script>
+</html>
+
