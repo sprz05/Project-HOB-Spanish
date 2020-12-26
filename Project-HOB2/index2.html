@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <!-- target for generated content -->
+        <article id="fullProject">
+        <center><h1 id="assignmentTitle"></h1></center>
+        <div id='divColl'></div>
+        </article>
+    <body>
+    <div id="title" style="display:none;">
+         <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
+    <p>Add a title for you long assignment or project:</p>
+    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();">Add title</button>
+    <div style="height:100px"></div>
+    <button onclick="next1();">Next</button>
+    </div>
+        <!--- Add Step --->
+        <div id='addSteps' style="display:none">
+            <img id="img2" src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEeIpOoYRpv87p/pub?w=963&amp;h=194">
+           <p>Now add some steps you'll have to take for your project or long assignment</p>
+            <input id='input' type='text' placeholder='Title for collapsible' />
+            <button class='addcollapsible'>Add step</button>
+            <div style="height:100px"></div>
+            <button onclick="back1();">Back</button>
+            <button id="taskToSteps" onclick="next2();">Next</button>
+        </div>
+
+        <!-- Add content to Collapsible (display:none) --->
+        <div id='addTasksToSteps' style='display:none'>
+            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
+         <p>Add tasks to your steps</p>
+            <!-- this will be cloned -->
+            <div style="display:none">
+            <div id='inputTaskDiv' style='display:none'>
+                <input style="display:none" id='taskInput' type='text' />
+                <button style="display:none" class='addtask'>Add task</button>
+            </div>
+           </div>
+                <div style="height:100px"></div>
+                <button onclick="back2();">Back</button>
+                <button onclick="next3();">Next</button>
+         </div>
+
+        <!-- this will be cloned -->
+        <a href='#' id='deltask'>X</a>
+        
+    </body>
+
+<div class="row">
+  <div class="column" style="width:100%; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><a href="edit.html" target="_blank">Edit Project ✏️</p></center>
+ </div>
+
+ <div class="column" style="width:100%; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><a href="Project-HOB2/projectHOB2.html" target="_blank">New Project +</p></center>
+ </div>
+ 
+ </div>
+
+    <script src="script2.js"></script>
+</html>
+
