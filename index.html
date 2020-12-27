@@ -14,80 +14,52 @@
 
     </head>
 
-    <!-- target for generated content -->
-        <article id="fullProject">
-        <center><h1 id="assignmentTitle"></h1></center>
-        <div id='divColl'></div>
-        </article>
-    <body>
-      <center>
-    <div id="title">
+<center>
+    <h1>What do you want to do?</h1>
 
-         <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
-    <p>Add a title for you long assignment or project:</p>
-    <input id="inputAssignmentTitle" type="text"><button class="btn btn-warning" onclick="addAssignmentTitle();">Add title</button>
-    <div style="height:100px"></div>
-    <button class="btn btn-lg btn-primary" onclick="next1();">Next</button>
-    </div>
-        <!--- Add Step --->
-        <div id='addSteps' style="display:none">
-            <img id="img2" src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEeIpOoYRpv87p/pub?w=963&amp;h=194">
-           <p>Now add some steps you'll have to take for your project or long assignment</p>
-            <input id='input' type='text' placeholder='Step 1: Gather supplies' />
-            <button class='addcollapsible'><a class="btn btn-warning">Add step</a></button>
-            <div style="height:100px"></div>
-            <button class="btn btn-lg btn-danger" onclick="back1();">Back</button>
-            <button class="btn btn-lg btn-primary" id="taskToSteps" onclick="next2();">Next</button>
-        </div>
+ <p>If you already made a project see your project here:</p>
+ <div>
+  <div id="hideWalkthroughBtn" style="background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"><center><a href="index2.html" style="color: white;"><p>See current Project</p></a></center>
+</p>
+ </div>
 
-        <!-- Add content to Collapsible (display:none) --->
-        <div id='addTasksToSteps' style='display:none'>
-            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
-         <p>Add tasks to your steps</p>
-            <!-- this will be cloned -->
-            <div id='inputTaskDiv' style='display:none'>
-                <input id='taskInput' type='text' />
-                <button class='addtask'>Add task</button>
-            </div>
-                <div style="height:100px"></div>
-                <button class="btn btn-lg btn-danger" onclick="back2();">Back</button>
-                <a href="index2.html"><button class="btn btn-lg btn-primary">Next</button></a>
-         </div>
+</div>
 
-        <!-- this will be cloned -->
-        <a href='#' id='deltask'>X</a>
+<p>If you want to make a new project click here:</p>
+ <div style="background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style="height:20px"></p>
+  <center><button onclick="checkRemoveDiv()">New Project +</button></center>
+ </div>
+ </div>
 
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTYLdo_kc0zshXvkJN7x_Ts7KLF4iUAryWlrus4ijDh7JJNviHc8eMCp3kH241qdbgVkGsghxRYnRd-/pub?w=200&amp;h=200">
+
+
+<div id="checkRemoveStorageDiv" style="display:none;">
+ <p>Are you sure you want to start a new project?</p>
+ <p>Doing so will restart your current project!</p>
+ <a href="newProject.html"><button onclick="removeStorage()">Yes, I'm sure</button></a>
+ <button onclick="goBack()">No, go back</button>
+</div>
+</center>
+
+<center>
+ <img src="https://docs.google.com/drawings/d/e/2PACX-1vTYLdo_kc0zshXvkJN7x_Ts7KLF4iUAryWlrus4ijDh7JJNviHc8eMCp3kH241qdbgVkGsghxRYnRd-/pub?w=200&amp;h=200">
         </center>
-    </body>
-
-<div class="row" style=" display:none;">
-  <div id="hideWalkthroughBtn" class="column" style=" display:none; background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="hideWalkThrough()">Hide Walkthrough 🗺️</p></center>
- </div>
-
- <div id="walkthroughBtn" class="column" style=" background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="walkThroughShow()">Show Walkthrough 🗺️</p></center>
- </div>
-  
-  <div class="column" style="background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="showEditProjectConsole()">Edit Project ✏️</p></center>
- </div>
-
- <div class="column" style="display:none; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="showEditProjectConsole()">Don't Edit Project ✏️</p></center>
- </div>
- 
-  <div class="column" style="background-color:green; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><a href="index2.html" target="_blank">See full project ➕</a></center>
- </div>
-
-
     <script src="script.js"></script>
 </html>
 
+
+<script>
+    function checkRemoveDiv(){
+        document.getElementById("checkRemoveStorageDiv").style.display = "block";
+    }
+
+    function goBack(){
+        document.getElementById("checkRemoveStorageDiv").style.display = "none";
+    }
+
+    function removeStorage(){
+       localStorage.clear();
+    }
+</script>
