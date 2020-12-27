@@ -7,6 +7,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
+    <div id="allContent">
+
+
     <!-- target for generated content -->
         <article id="fullProject">
         <center><h1 id="assignmentTitle"></h1></center>
@@ -55,16 +58,43 @@
 <div class="row">
   <div class="column" style="width:100%; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style="height:20px"></p>
-  <center><a href="edit.html" target="_blank">Edit Project ✏️</p></center>
+  <center><a href="edit.html" target="_blank">Edit Project ✏️</a></center>
  </div>
 
  <div class="column" style="width:100%; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style="height:20px"></p>
-  <center><a href="Project-HOB2/projectHOB2.html" target="_blank">New Project +</p></center>
+  <center><button onclick="checkRemoveDiv()">New Project +</button></center>
+    <p><b>Note: Doing so will restart this project!</b></p>
  </div>
- 
  </div>
+
+</div>
+
+
+
+<div id="checkRemoveStorageDiv" style="display:none;">
+ <p>Are you sure you want to start a new project?</p>
+ <p>Doing so will restart your current project</p>
+ <a href="newProject.html"><button onclick="removeStorage()">Yes, I'm sure</button><a>
+ <button onclick="goBack()">No, go back</button>
+</div>
 
     <script src="script2.js"></script>
 </html>
+
+<script>
+    function checkRemoveDiv(){
+        document.getElementById("allContent").style.display = "none";
+        document.getElementById("checkRemoveStorageDiv").style.display = "block";
+    }
+
+    function goBack(){
+        document.getElementById("allContent").style.display = "block";
+        document.getElementById("checkRemoveStorageDiv").style.display = "none";
+    }
+
+    function removeStorage(){
+       localStorage.clear();
+    }
+</script>
 
