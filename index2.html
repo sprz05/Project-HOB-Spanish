@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
 
     <div id="allContent">
@@ -56,29 +60,30 @@
     </body>
 
 <div class="row">
-  <div class="column" style="width:100%; background-color:#20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <div class="column">
   <p style="height:20px"></p>
-  <center><a href="edit.html" target="_blank">Edit Project ✏️</a></center>
+  <center><a href="edit.html" target="_blank" class="btn btn-primary">Edit Project ✏️</a></center>
  </div>
 
- <div class="column" style="width:100%; background-color:#20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+ <div class="column">
   <p style="height:20px"></p>
-  <center><button onclick="checkRemoveDiv()">New Project +</button></center>
-    <p><b>Note: Doing so will restart this project!</b></p>
+  <center><button onclick="checkRemoveDiv()"  class="btn btn-danger">New Project +</button></center>
+    <center><p><b>Note: Doing so will restart this project!</b></p></center>
  </div>
  </div>
 
 </div>
 
 
-
-<div id="checkRemoveStorageDiv" style="display:none;">
+<center>
+<div id="checkRemoveStorageDiv" style="display:none; margin-top: 200px">
+    <h1><b>Careful!</b></h1>
  <p>Are you sure you want to start a new project?</p>
  <p>Doing so will restart your current project</p>
- <a href="newProject.html"><button onclick="removeStorage()">Yes, I'm sure</button><a>
- <button onclick="goBack()">No, go back</button>
+ <a href="newProject.html"><button class="btn btn-success" onclick="removeStorage()">Yes, I'm sure</button></a>
+ <button onclick="goBack()" class="btn btn-danger">No, go back</button>
 </div>
-
+</center>
     <script src="script2.js"></script>
 </html>
 

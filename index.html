@@ -15,21 +15,21 @@
     </head>
 
 <center>
-    <h1>What do you want to do?</h1>
+    <h1><b>What do you want to do?</b></h1>
 
- <p>If you already made a project see your project here:</p>
+ <p>If you already made a project plan see your project plan here:</p>
  <div>
   <div id="hideWalkthroughBtn" style="background-color: #20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"><center><a href="index2.html" style="color: white;"><p>See current Project Plan</p></a></center>
+  <p style="height:20px"><center><a href="index2.html" style="color: white;"><p>See my current Project Plan</p></a></center>
 </p>
  </div>
 
 </div>
 
-<p>If you want to make a new project click here:</p>
+<p>If you want to make a new project plan click here:</p>
  <div style="background-color:#351c75ff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style="height:20px"></p>
-  <center><button onclick="checkRemoveDiv()">New Project Plan +</button></center>
+  <center><button class="btn btn-primary" onclick="checkRemoveDiv()">New Project Plan +</button></center>
  </div>
  </div>
 
@@ -38,8 +38,8 @@
 <div id="checkRemoveStorageDiv" style="display:none;">
  <p>Are you sure you want to start a new project?</p>
  <p>Doing so will restart your current project!</p>
- <a href="newProject.html"><button onclick="removeStorage()">Yes, I'm sure</button></a>
- <button onclick="goBack()">No, go back</button>
+ <a href="newProject.html"><button class="btn btn-success" onclick="removeStorage()">Yes, I'm sure</button></a>
+ <button onclick="goBack()" class="btn btn-danger">No, go back</button>
 </div>
 </center>
 

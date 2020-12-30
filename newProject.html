@@ -14,6 +14,9 @@
 
     </head>
 
+<center>
+
+
     <!-- target for generated content -->
         <article id="fullProject">
         <center><h1 id="assignmentTitle"></h1></center>
@@ -21,12 +24,12 @@
         </article>
     <body>
     <div id="title">
-
+          <h1><b>Step 1:</b></h1>
          <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
     <p>Add a title for you long assignment or project:</p>
-    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();">Add title</button>
+    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();" class="btn btn-primary">Add title</button>
     <div style="height:100px"></div>
-    <button onclick="next1();">Next</button>
+    <button onclick="next1();"  class="btn btn-lg btn-success">Next</button>
     </div>
         <!--- Add Step --->
         <div id='addSteps' style="display:none">
@@ -35,8 +38,8 @@
             <input id='input' type='text' placeholder='Step 1: Gather supplies' />
             <button class='addcollapsible'>Add step</button>
             <div style="height:100px"></div>
-            <button class="btn btn-lg btn-primary" onclick="back1();">Back</button>
-            <button class="btn btn-lg btn-primary" id="taskToSteps" onclick="next2();">Next</button>
+            <button class="btn btn-lg btn-danger" onclick="back1();">Back</button>
+            <button class="btn btn-lg btn-success" id="taskToSteps" onclick="next2();">Next</button>
         </div>
 
         <!-- Add content to Collapsible (display:none) --->
@@ -49,8 +52,8 @@
                 <button class='addtask'>Add task</button>
             </div>
                 <div style="height:100px"></div>
-                <button class="btn btn-lg btn-primary" onclick="back2();">Back</button>
-                <a class="btn btn-lg btn-primary" href="index2.html"><button>Next</button></a>
+                <button class="btn btn-lg btn-danger" onclick="back2();">Back</button>
+                <a href="index2.html"><button class="btn btn-lg btn-success">Next</button></a>
          </div>
 
         <!-- this will be cloned -->
@@ -86,7 +89,7 @@
   <center><a href="index2.html" target="_blank">See full project ➕</a></center>
  </div>
 
-
+</center>
     <script src="script.js"></script>
 </html>
 
