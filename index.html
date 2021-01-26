@@ -14,12 +14,43 @@
 
     </head>
 
+
+<style>
+  .feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+
+</style>
+
+<a href="https://forms.gle/kdB8BJNmwQzChVKx5" target="_blank"><button id="popup" class="feedback-button">Feedback</button></a>
+<script src="_include/js/feedback.js"></script>
+
+
+
 <center>
     <h1><b>What do you want to do?</b></h1>
 
+
  <p>If you already made a project plan see your project plan here:</p>
  <div>
-  <div id="hideWalkthroughBtn" style="background-color: #20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <div id="hideWalkthroughBtn" style="background-color: #20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
   <p style="height:20px"><center><a href="index2.html" style="color: white;"><p>See my current Project Plan</p></a></center>
 </p>
  </div>
@@ -27,7 +58,7 @@
 </div>
 
 <p>If you want to make a new project plan click here:</p>
- <div style="background-color:#351c75ff; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+ <div style="background-color:#351c75ff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
   <p style="height:20px"></p>
   <center><button class="btn btn-primary" onclick="checkRemoveDiv()">New Project Plan +</button></center>
  </div>
