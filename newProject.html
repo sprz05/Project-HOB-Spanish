@@ -24,36 +24,36 @@
         </article>
     <body>
     <div id="title">
-          <h1><b>Step 1:</b></h1>
-         <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
-    <p>Add a title for you long assignment or project:</p>
-    <input id="inputAssignmentTitle" type="text"><button onclick="addAssignmentTitle();" class="btn btn-primary">Add title</button>
-    <div style="height:100px"></div>
-    <button onclick="next1();"  class="btn btn-lg btn-success">Next</button>
+        <h1> <b> Paso 1: </b> </h1>
+         <img id = "img1" src = "https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9hx48-emp">
+    <p> Agrega un título para tu tarea o proyecto largo: </p>
+    <input id = "inputAssignmentTitle" type = "text"> <button onclick = "addAssignmentTitle ();" class = "btn btn-primary"> Agregar título </button>
+    <div style = "height: 100px"> </div>
+    <botón onclick = "siguiente1 ();" class = "btn btn-lg btn-success"> Siguiente </button>
     </div>
-        <!--- Add Step --->
-        <div id='addSteps' style="display:none">
-            <img id="img2" src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEeIpOoYRpv87p/pub?w=963&amp;h=194">
-           <p>Now add some steps you'll have to take for your project or long assignment</p>
-            <input id='input' type='text' placeholder='Step 1: Gather supplies' />
-            <button class='addcollapsible'>Add step</button>
-            <div style="height:100px"></div>
-            <button class="btn btn-lg btn-danger" onclick="back1();">Back</button>
-            <button class="btn btn-lg btn-success" id="taskToSteps" onclick="next2();">Next</button>
+        <! --- Agregar paso --->
+        <div id = 'addSteps' style = "display: none">
+            <img id = "img2" src = "https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEubavwpO96" >
+           <p> Ahora agregue algunos pasos que deberá seguir para su proyecto o tarea larga </p>
+            <input id = 'input' type = 'text' placeholder = 'Paso 1: Reúna los suministros' />
+            <button class = 'addcollapsible'> Agregar paso </button>
+            <div style = "height: 100px"> </div>
+            <button class = "btn btn-lg btn-danger" onclick = "back1 ();"> Atrás </button>
+            <button class = "btn btn-lg btn-success" id = "taskToSteps" onclick = "next2 ();"> Siguiente </button>
         </div>
 
-        <!-- Add content to Collapsible (display:none) --->
-        <div id='addTasksToSteps' style='display:none'>
-            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
-         <p>Add tasks to your steps</p>
-            <!-- this will be cloned -->
-            <div id='inputTaskDiv' style='display:none'>
-                <input id='taskInput' type='text' />
-                <button class='addtask'>Add task</button>
+        <! - Agregar contenido a Plegable (pantalla: ninguno) --->
+        <div id = 'addTasksToSteps' style = 'display: none'>
+            <img id = "img3" src = "https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhub&mpLO=48KWpXznhub-pLO ">
+         <p> Agrega tareas a tus pasos </p>
+            <! - esto será clonado ->
+            <div id = 'inputTaskDiv' style = 'display: none'>
+                <input id = 'taskInput' type = 'text' />
+                <button class = 'addtask'> Agregar tarea </button>
             </div>
-                <div style="height:100px"></div>
-                <button class="btn btn-lg btn-danger" onclick="back2();">Back</button>
-                <a href="index2.html"><button class="btn btn-lg btn-success">Next</button></a>
+                <div style = "height: 100px"> </div>
+                <button class = "btn btn-lg btn-danger" onclick = "back2 ();"> Atrás </button>
+                <a href="index2.html"> <button class = "btn btn-lg btn-success"> Siguiente </button> </a>
          </div>
 
         <!-- this will be cloned -->
@@ -63,30 +63,30 @@
         
     </body>
 
-<div class="row" style=" display:none;">
-  <div id="hideWalkthroughBtn" class="column" style=" display:none; background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="hideWalkThrough()">Hide Walkthrough 🗺️</p></center>
+<div class = "row" style = "display: none;">
+  <div id = "hideWalkthroughBtn" class = "column" style = "display: none; background-color: blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style = "height: 20px"> </p>
+  <center> <p onclick = "hideWalkThrough ()"> Ocultar tutorial 🗺️ </p> </center>
  </div>
 
- <div id="walkthroughBtn" class="column" style=" background-color:blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="walkThroughShow()">Show Walkthrough 🗺️</p></center>
+ <div id = "walkthroughBtn" class = "column" style = "background-color: blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style = "height: 20px"> </p>
+  <center> <p onclick = "walkThroughShow ()"> Mostrar tutorial 🗺️ </p> </center>
  </div>
   
-  <div class="column" style="background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="showEditProjectConsole()">Edit Project ✏️</p></center>
+  <div class = "column" style = "background-color: orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style = "height: 20px"> </p>
+  <center> <p onclick = "showEditProjectConsole ()"> Editar proyecto ✏️ </p> </center>
  </div>
 
- <div class="column" style="display:none; background-color:orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><p onclick="showEditProjectConsole()">Don't Edit Project ✏️</p></center>
+ <div class = "column" style = "display: none; background-color: orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style = "height: 20px"> </p>
+  <center> <p onclick = "showEditProjectConsole ()"> No editar el proyecto ✏️ </p> </center>
  </div>
  
-  <div class="column" style="background-color:green; height: 150px; color: white; font-size: 20px; border-radius: 10px">
-  <p style="height:20px"></p>
-  <center><a href="index2.html" target="_blank">See full project ➕</a></center>
+  <div class = "column" style = "background-color: green; height: 150px; color: white; font-size: 20px; border-radius: 10px">
+  <p style = "height: 20px"> </p>
+  <center> <a href="index2.html" target="_blank"> Ver el proyecto completo ➕ </a> </center>
  </div>
 
 </center>

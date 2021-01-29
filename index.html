@@ -44,33 +44,53 @@
 
 
 
+<div class="dropdown">
+  <a href="#" class="btn btn-default dropdown-toggle " data-toggle="dropdown" id="navbarDropdownMenuLink2">
+       🗣️Translate
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+      <li>
+          <a class="dropdown-item" href="https://sprz05.github.io/Project-HOB/">
+             English
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="https://sprz05.github.io/Project-HOB-Spanish/">
+             Spanish
+          </a>
+      </li>
+      <li>
+  </ul>
+</div>
+
+
 <center>
-    <h1><b>What do you want to do?</b></h1>
+<h1> <b> ¿Qué quieres hacer? </b> </h1>
 
 
- <p>If you already made a project plan see your project plan here:</p>
+ <p> Si ya hizo un plan de proyecto, vea su plan de proyecto aquí: </p>
  <div>
-  <div id="hideWalkthroughBtn" style="background-color: #20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
-  <p style="height:20px"><center><a href="index2.html" style="color: white;"><p>See my current Project Plan</p></a></center>
+  <div id = "hideWalkthroughBtn" style = "background-color: #20124dff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
+  <p style = "height: 20px"> <center> <a href="index2.html" style="color: white;"> <p> Ver mi plan de proyecto actual </p> </a> </ center >
 </p>
  </div>
 
 </div>
 
-<p>If you want to make a new project plan click here:</p>
- <div style="background-color:#351c75ff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
-  <p style="height:20px"></p>
-  <center><button class="btn btn-primary" onclick="checkRemoveDiv()">New Project Plan +</button></center>
+<p> Si desea hacer un nuevo plan de proyecto, haga clic aquí: </p>
+ <div style = "background-color: #351c75ff; height: 150px; color: white; font-size: 20px; border-radius: 10px; width: 60%">
+  <p style = "height: 20px"> </p>
+  <center> <button class = "btn btn-primary" onclick = "checkRemoveDiv ()"> Nuevo plan de proyecto + </button> </center>
  </div>
  </div>
 
 
 
-<div id="checkRemoveStorageDiv" style="display:none;">
- <p>Are you sure you want to start a new project?</p>
- <p>Doing so will restart your current project!</p>
- <a href="newProject.html"><button class="btn btn-success" onclick="removeStorage()">Yes, I'm sure</button></a>
- <button onclick="goBack()" class="btn btn-danger">No, go back</button>
+<div id = "checkRemoveStorageDiv" style = "display: none;">
+ <p> ¿Está seguro de que desea iniciar un nuevo proyecto? </p>
+ <p> ¡Si lo hace, reiniciará su proyecto actual! </p>
+ <a href="newProject.html"> <button class = "btn btn-success" onclick = "removeStorage ()"> Sí, estoy seguro </button> </a>
+ <button onclick = "goBack ()" class = "btn btn-danger"> No, volver </button>
 </div>
 </center>
 
@@ -94,3 +114,4 @@
        localStorage.clear();
     }
 </script>
+
