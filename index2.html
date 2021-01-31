@@ -23,9 +23,9 @@
     <div id="title" style="display:none;">
          <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9BNXmy-e1uw/pub?w=481&amp;h=97">
    <p> Agrega un título para tu tarea o proyecto largo: </p>
-    <input id = "inputAssignmentTitle" type = "text"> <button onclick = "addAssignmentTitle ();"> Agregar título </button>
+    <input id = "inputAssignmentTitle" type = "text"> <button onclick="addAssignmentTitle();"> Agregar título </button>
     <div style = "height: 100px"> </div>
-    <button onclick = "next1 ();"> Siguiente </button>
+    <button onclick = "next1();"> Siguiente </button>
     </div>
         <! --- Agregar paso --->
         <div id = 'addSteps' style = "display: none">
@@ -35,8 +35,8 @@
             <input id = 'input' type = 'text' placeholder = 'Título para plegable' />
             <button class = 'addcollapsible'> Agregar paso </button>
             <div style="height:100px"> </div>
-            <button onclick = "back1 ();"> Atrás </button>
-            <button id = "taskToSteps" onclick = "next2 ();"> Siguiente </button>
+            <button onclick="back1();"> Atrás </button>
+            <button id = "taskToSteps" onclick="next2();"> Siguiente </button>
         </div>
 
         <! - Agregar contenido a Plegable (pantalla: ninguno) --->
@@ -51,23 +51,23 @@
             </div>
            </div>
                 <div style = "height: 100px"> </div>
-                <button onclick = "back2 ();"> Atrás </button>
-                <button onclick = "next3 ();"> Siguiente </button>
+                <button onclick = "back2();"> Atrás </button>
+                <button onclick = "next3();"> Siguiente </button>
          </div>
         <!-- this will be cloned -->
         <a href='#' id='deltask'>X</a>
         
     </body>
 
-<div class = "fila">
-  <div class = "columna">
+<div class = "row">
+  <div class = "column">
   <p style = "height: 20px"> </p>
   <center> <a href="edit.html" target="_blank" class="btn btn-primary"> Editar proyecto ✏️ </a> </center>
  </div>
 
- <div class = "columna">
+ <div class = "column">
   <p style = "height: 20px"> </p>
-  <center> <button onclick = "checkRemoveDiv ()" class = "btn btn-danger"> Nuevo proyecto + </button> </center>
+  <center> <button onclick = "checkRemoveDiv()" class = "btn btn-danger"> Nuevo proyecto + </button> </center>
     <center><p> <b> Nota: ¡Hacerlo reiniciará este proyecto! </b> </p> </center>
  </div>
  </div>
@@ -80,8 +80,8 @@
     <h1><b>¡Cuidado !</b> </h1>
  <p> ¿Está seguro de que desea iniciar un nuevo proyecto? </p>
  <p> Si lo hace, reiniciará su proyecto actual </p>
- <a href="newProject.html"> <button class = "btn btn-success" onclick = "removeStorage ()"> Sí, estoy seguro </button> </a>
- <button onclick = "goBack ()" class = "btn btn-danger"> No, volver </button>
+ <a href="newProject.html"> <button class = "btn btn-success" onclick = "removeStorage()"> Sí, estoy seguro </button> </a>
+ <button onclick = "goBack()" class = "btn btn-danger"> No, volver </button>
 </div>
 </center>
     <script src="script2.js"></script>

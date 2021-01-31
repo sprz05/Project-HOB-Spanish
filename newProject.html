@@ -24,15 +24,15 @@
     <body>
     <div id="title">
         <h1> <b> Paso 1: </b> </h1>
-         <img id = "img1" src = "https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9hx48-emp">
+         <img id="img1" src="https://docs.google.com/drawings/d/e/2PACX-1vQTp08NSlxdEkNcCDVciN10JM6rXIZf3aU5yH5pEhQD2cbzOllpovHV6s_ObGpn9knso9hx48-emp">
     <p> Agrega un título para tu tarea o proyecto largo: </p>
-    <input id = "inputAssignmentTitle" type = "text"> <button onclick = "addAssignmentTitle ();" class = "btn btn-primary"> Agregar título </button>
+    <input id = "inputAssignmentTitle" type = "text"> <button onclick = "addAssignmentTitle();" class = "btn btn-primary"> Agregar título </button>
     <div style = "height: 100px"> </div>
-    <botón onclick = "siguiente1 ();" class = "btn btn-lg btn-success"> Siguiente </button>
+    <botón onclick = "siguiente1();" class = "btn btn-lg btn-success"> Siguiente </button>
     </div>
         <! --- Agregar paso --->
         <div id = 'addSteps' style = "display: none">
-            <img id = "img2" src = "https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEubavwpO96" >
+            <img id="img2" src="https://docs.google.com/drawings/d/e/2PACX-1vTNt9lv0Zi860cajv9XxjjxsGdhjyxpmOrarhoA1VTF1q9x7WY-W7ieGcCmF9MbU6gEubavwpO96">
            <p> Ahora agregue algunos pasos que deberá seguir para su proyecto o tarea larga </p>
             <input id = 'input' type = 'text' placeholder = 'Paso 1: Reúna los suministros' />
             <button class = 'addcollapsible'> Agregar paso </button>
@@ -43,7 +43,7 @@
 
         <! - Agregar contenido a Plegable (pantalla: ninguno) --->
         <div id = 'addTasksToSteps' style = 'display: none'>
-            <img id = "img3" src = "https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhub&mpLO=48KWpXznhub-pLO ">
+            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhub&mpLO=48KWpXznhub-pLO">
          <p> Agrega tareas a tus pasos </p>
             <! - esto será clonado ->
             <div id = 'inputTaskDiv' style = 'display: none'>
@@ -65,22 +65,22 @@
 <div class = "row" style = "display: none;">
   <div id = "hideWalkthroughBtn" class = "column" style = "display: none; background-color: blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style = "height: 20px"> </p>
-  <center> <p onclick = "hideWalkThrough ()"> Ocultar tutorial 🗺️ </p> </center>
+  <center> <p onclick = "hideWalkThrough()"> Ocultar tutorial 🗺️ </p> </center>
  </div>
 
  <div id = "walkthroughBtn" class = "column" style = "background-color: blue; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style = "height: 20px"> </p>
-  <center> <p onclick = "walkThroughShow ()"> Mostrar tutorial 🗺️ </p> </center>
+  <center> <p onclick = "walkThroughShow()"> Mostrar tutorial 🗺️ </p> </center>
  </div>
   
   <div class = "column" style = "background-color: orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style = "height: 20px"> </p>
-  <center> <p onclick = "showEditProjectConsole ()"> Editar proyecto ✏️ </p> </center>
+  <center> <p onclick = "showEditProjectConsole()"> Editar proyecto ✏️ </p> </center>
  </div>
 
  <div class = "column" style = "display: none; background-color: orange; height: 150px; color: white; font-size: 20px; border-radius: 10px">
   <p style = "height: 20px"> </p>
-  <center> <p onclick = "showEditProjectConsole ()"> No editar el proyecto ✏️ </p> </center>
+  <center> <p onclick = "showEditProjectConsole()"> No editar el proyecto ✏️ </p> </center>
  </div>
  
   <div class = "column" style = "background-color: green; height: 150px; color: white; font-size: 20px; border-radius: 10px">
